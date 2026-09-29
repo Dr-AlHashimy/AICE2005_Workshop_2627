@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Rich Text Editor</title>
+    <style>
+        :root {
+            --border-color: #ccc;
+            --bg-color: #f9f9f9;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f6f9;
+        }
+        .editor-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 10px;
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+        .toolbar button, .toolbar input, .toolbar select {
+            padding: 6px 10px;
+            font-size: 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: #fff;
+            cursor: pointer;
+        }
+        .toolbar button:hover {
+            background-color: #e6e6e6;
+        }
+        .editor-area {
+            min-height: 300px;
+            padding: 15px;
+            outline: none;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="editor-container">
+    <!-- Editor Toolbar -->
+    <div class="toolbar">
+        <button onclick="formatDoc('bold')" title="Bold"><b>B</b></button>
+        <button onclick="formatDoc('italic')" title="Italic"><i>I</i></button>
+        <button onclick="formatDoc('underline')" title="Underline"><u>U</u></button>
+        <button onclick="formatDoc('justifyLeft')" title="Align Left">Left</button>
+        <button onclick="formatDoc('justifyCenter')" title="Align Center">Center</button>
+        <button onclick="formatDoc('justifyRight')" title="Align Right">Right</button>
+
+        <!-- Font Color -->
+        <label style="font-size:12px; align-self:center; margin-left:5px;">
+            Color: <input type="color" onchange="formatDoc('foreColor', this.value)">
+        </label>
+
+        <!-- Clear Formatting -->
+        <button onclick="formatDoc('removeFormat')" style="margin-left: auto; color: red;">Clear</button>
+    </div>
+
+    <!-- Editable Text Workspace -->
+    <div id="editor" class="editor-area" contenteditable="true">
+        Select this text to try out the formatting buttons above!
+    </div>
+</div>
+
+<script>
+    // Function to apply formatting modifications
+    function formatDoc(cmd, value = null) {
+        document.execCommand(cmd, false, value);
+        document.getElementById('editor').focus();
+    }
+</script>
+
+</body>
+</html>
