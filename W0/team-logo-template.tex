@@ -1,0 +1,50 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=15mm]{geometry}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+\pagestyle{empty}
+
+\definecolor{navy}{HTML}{1E2761}
+\definecolor{muted}{HTML}{5A6470}
+\definecolor{rulecolor}{HTML}{9AA4B0}
+
+% One logo cell: a 58mm-diameter circle with two prompts (each with two
+% blank lines) underneath.
+\newcommand{\logocell}{%
+  \begin{minipage}[t]{58mm}
+    \centering
+    \begin{tikzpicture}
+      \draw[rulecolor, thick, dash pattern=on 3pt off 2pt] (0,0) circle (29mm);
+      % To place a logo image instead of leaving this blank, replace the
+      % line above with, e.g.:
+      %   \clip (0,0) circle (29mm);
+      %   \node at (0,0) {\includegraphics[width=58mm]{your-logo.png}};
+    \end{tikzpicture}\\[3mm]
+    \raggedright
+    {\small\bfseries\color{navy}Inspiration / how you came up with it:}\\[2mm]
+    \textcolor{rulecolor}{\rule{58mm}{0.4pt}}\\[4mm]
+    \textcolor{rulecolor}{\rule{58mm}{0.4pt}}\\[4mm]
+    {\small\bfseries\color{navy}How it represents your app:}\\[2mm]
+    \textcolor{rulecolor}{\rule{58mm}{0.4pt}}\\[4mm]
+    \textcolor{rulecolor}{\rule{58mm}{0.4pt}}
+  \end{minipage}%
+}
+
+\begin{document}
+
+{\Huge\bfseries\color{navy}Team Logo Concepts}\\[2mm]
+{\color{muted}Sketch or paste 6 logo concepts, one per circle (each 58\,mm diameter). Underneath each, briefly note the inspiration and how it represents your app.}
+
+\vspace{6mm}
+\noindent{\bfseries\color{navy}Team Name:} \textcolor{rulecolor}{\rule{100mm}{0.4pt}}
+
+\vspace{8mm}
+\noindent
+\begin{tabular}{@{}ccc@{}}
+\logocell & \logocell & \logocell \\[10mm]
+\logocell & \logocell & \logocell \\
+\end{tabular}
+
+\end{document}
