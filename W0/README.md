@@ -1,5 +1,16 @@
 # W0
 
+## Instructions
+
+1. Create your team's project page on the University of Southampton GitLab
+   (not GitHub).
+2. Add the following as **Maintainers** on your project:
+   - Nawfal (`nawfal@soton.ac.uk`)
+   - Shushan He (`sh2u21@soton.ac.uk`)
+   - Xuankun Cai (`xc1m22@soton.ac.uk`)
+3. Use the template in [`_template/`](_template/) to design your team logo —
+   we'll use it to make your physical badges in the next workshop session.
+
 ## `_template/` — team badge sheet template
 
 Two versions of the same worksheet — use whichever fits your workflow:
