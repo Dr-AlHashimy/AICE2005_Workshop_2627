@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>contenteditable Playground</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f6f9;
+        color: #1a1d21;
+    }
+    .wrap {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 4px;
+    }
+    p.intro {
+        color: #5a6470;
+        margin-top: 0;
+    }
+    section {
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 18px 20px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    section h2 {
+        margin-top: 0;
+        font-size: 1.1rem;
+    }
+    section p.desc {
+        color: #5a6470;
+        font-size: 0.95rem;
+    }
+
+    /* --- Section 1: basic editable content, with a custom caret --- */
+    blockquote {
+        margin: 0;
+        padding: 12px 16px;
+        border-left: 4px solid #005c84;
+        background: #f9f9f9;
+    }
+    [contenteditable="true"] {
+        caret-color: red;
+        outline: none;
+    }
+    cite {
+        display: block;
+        margin-top: 8px;
+        font-style: italic;
+    }
+
+    /* --- Section 2: true vs plaintext-only paste comparison --- */
+    .source {
+        padding: 12px 16px;
+        border: 1px dashed #9aa4b0;
+        border-radius: 4px;
+        background: #f9f9f9;
+        margin-bottom: 14px;
+        user-select: all;
+    }
+    .compare {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .compare > div {
+        flex: 1 1 260px;
+    }
+    .compare label {
+        display: block;
+        font-weight: bold;
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+    }
+    .target {
+        min-height: 90px;
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: #f9f9f9;
+    }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+    <h1>contenteditable Playground</h1>
+    <p class="intro">
+        Two small demos of the
+        <code>contenteditable</code> global attribute. Reference:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable" target="_blank" rel="noopener">MDN &ndash; contenteditable</a>.
+    </p>
+
+    <section>
+        <h2>1. Make anything editable</h2>
+        <p class="desc">
+            Any element can become editable with
+            <code>contenteditable="true"</code>. Click into the quote below and
+            change it &mdash; the text caret is styled red with the CSS
+            <code>caret-color</code> property.
+        </p>
+
+        <blockquote contenteditable="true">
+            <p>Edit this content to add your own quote.</p>
+        </blockquote>
+        <cite contenteditable="true">&ndash; Write your own name here</cite>
+    </section>
+
+    <section>
+        <h2>2. "true" vs "plaintext-only"</h2>
+        <p class="desc">
+            Select and copy the formatted text below, then paste it into each
+            box on the right. <code>contenteditable="true"</code> keeps the
+            formatting; <code>contenteditable="plaintext-only"</code> strips
+            it down to plain text.
+        </p>
+
+        <div class="source">
+            Copy me: <b>bold</b>, <i>italic</i>,
+            <span style="color:#c0392b">coloured text</span>, and a list&mdash;
+            <ul>
+                <li>first item</li>
+                <li>second item</li>
+            </ul>
+        </div>
+
+        <div class="compare">
+            <div>
+                <label>contenteditable="true"</label>
+                <div class="target" contenteditable="true">Paste here&hellip;</div>
+            </div>
+            <div>
+                <label>contenteditable="plaintext-only"</label>
+                <div class="target" contenteditable="plaintext-only">Paste here&hellip;</div>
+            </div>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>

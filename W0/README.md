@@ -24,3 +24,8 @@ Both contain:
 - `_starting point/index.html` — a simple contenteditable rich-text editor
   (bold/italic/underline, alignment, font color, clear formatting) as a
   starting point to build on.
+- `_starting point/contenteditable-basics.html` — two small demos of the
+  [`contenteditable`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable)
+  global attribute: making any element editable with a custom caret color,
+  and a side-by-side comparison of `contenteditable="true"` vs
+  `contenteditable="plaintext-only"` paste behaviour.
