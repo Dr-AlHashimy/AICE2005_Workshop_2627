@@ -2,49 +2,51 @@
 \usepackage[margin=15mm]{geometry}
 \usepackage{tikz}
 \usepackage{xcolor}
-\usepackage{array}
 \usepackage[T1]{fontenc}
 \pagestyle{empty}
+\setlength{\parindent}{0pt}
 
 \definecolor{navy}{HTML}{1E2761}
 \definecolor{muted}{HTML}{5A6470}
 \definecolor{rulecolor}{HTML}{9AA4B0}
+\definecolor{faint}{HTML}{C7CDD4}
 
-% One logo cell: a 58mm-diameter circle with two prompts (each with two
-% blank lines) underneath.
-\newcommand{\logocell}{%
-  \begin{minipage}[t]{58mm}
-    \centering
-    \begin{tikzpicture}
-      \draw[rulecolor, thick, dash pattern=on 3pt off 2pt] (0,0) circle (29mm);
-      % To place a logo image instead of leaving this blank, replace the
-      % line above with, e.g.:
-      %   \clip (0,0) circle (29mm);
-      %   \node at (0,0) {\includegraphics[width=58mm]{your-logo.png}};
-    \end{tikzpicture}\\[3mm]
-    \raggedright
-    {\small\bfseries\color{navy}Inspiration / how you came up with it:}\\[2mm]
-    \textcolor{rulecolor}{\rule{58mm}{0.4pt}}\\[4mm]
-    \textcolor{rulecolor}{\rule{58mm}{0.4pt}}\\[4mm]
-    {\small\bfseries\color{navy}How it represents your app:}\\[2mm]
-    \textcolor{rulecolor}{\rule{58mm}{0.4pt}}\\[4mm]
-    \textcolor{rulecolor}{\rule{58mm}{0.4pt}}
-  \end{minipage}%
+% One badge circle: a 58mm-diameter dashed circle (also the cut line),
+% with a faint "paste logo here" placeholder. Paste the SAME logo into
+% all 6 -- print and cut along the dashed lines to make the badges.
+\newcommand{\badgecircle}{%
+  \begin{tikzpicture}
+    \draw[rulecolor, thick, dash pattern=on 3pt off 2pt] (0,0) circle (29mm);
+    % To place your logo image instead of the placeholder text, replace
+    % the two lines below with, e.g.:
+    %   \clip (0,0) circle (29mm);
+    %   \node at (0,0) {\includegraphics[width=58mm]{your-logo.png}};
+    \node[faint, italic] at (0,0) {\itshape paste logo here};
+  \end{tikzpicture}%
 }
 
 \begin{document}
 
-{\Huge\bfseries\color{navy}Team Logo Concepts}\\[2mm]
-{\color{muted}Sketch or paste 6 logo concepts, one per circle (each 58\,mm diameter). Underneath each, briefly note the inspiration and how it represents your app.}
+{\Huge\bfseries\color{navy}Team Badge Sheet}\\[2mm]
+{\color{muted}Paste the logo you designed in Workshop~0 into one circle below, then copy it into the other 5 (each is 58\,mm diameter --- a standard badge size). Print and cut along the dashed lines to make your team's badges.}
 
 \vspace{6mm}
-\noindent{\bfseries\color{navy}Team Name:} \textcolor{rulecolor}{\rule{100mm}{0.4pt}}
+{\bfseries\color{navy}Team Name:} \textcolor{rulecolor}{\rule{100mm}{0.4pt}}
 
 \vspace{8mm}
-\noindent
+\begin{center}
 \begin{tabular}{@{}ccc@{}}
-\logocell & \logocell & \logocell \\[10mm]
-\logocell & \logocell & \logocell \\
+\badgecircle & \badgecircle & \badgecircle \\[8mm]
+\badgecircle & \badgecircle & \badgecircle \\
 \end{tabular}
+\end{center}
+
+\vspace{10mm}
+{\bfseries\color{navy}Inspiration / how you came up with it, and how it represents your app:}\\[4mm]
+\textcolor{rulecolor}{\rule{\textwidth}{0.4pt}}\\[8mm]
+\textcolor{rulecolor}{\rule{\textwidth}{0.4pt}}\\[8mm]
+\textcolor{rulecolor}{\rule{\textwidth}{0.4pt}}\\[8mm]
+\textcolor{rulecolor}{\rule{\textwidth}{0.4pt}}\\[8mm]
+\textcolor{rulecolor}{\rule{\textwidth}{0.4pt}}
 
 \end{document}
