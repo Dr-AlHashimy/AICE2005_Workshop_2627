@@ -1,11 +1,11 @@
 # W0
 
-## Team badge sheet template
+## `_template/` — team badge sheet template
 
 Two versions of the same worksheet — use whichever fits your workflow:
 
-- `team-logo-template.pptx` — editable PowerPoint version
-- `team-logo-template.tex` (+ compiled `team-logo-template.pdf`) — LaTeX/TikZ version
+- `_template/team-logo-template.pptx` — editable PowerPoint version
+- `_template/team-logo-template.tex` (+ compiled `_template/team-logo-template.pdf`) — LaTeX/TikZ version
 
 Both contain:
 
@@ -18,3 +18,9 @@ Both contain:
   to place your image.)
 - One shared field at the bottom: **Inspiration / how you came up with it,
   and how it represents your app**
+
+## `_starting point/` — coding starter
+
+- `_starting point/index.html` — a simple contenteditable rich-text editor
+  (bold/italic/underline, alignment, font color, clear formatting) as a
+  starting point to build on.
