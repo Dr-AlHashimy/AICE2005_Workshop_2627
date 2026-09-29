@@ -7,12 +7,12 @@ Starter materials for the AICE2005 workshop sessions.
 Pull this repo into your own project as a remote to bring in updates as they're published:
 
 ```bash
-git remote add workshop https://github.com/Nawfal3D/AICE2005_Workshop_2627.git
+git remote add workshop https://github.com/Dr-AlHashimy/AICE2005_Workshop_2627.git
 git pull workshop main --allow-unrelated-histories
 ```
 
 Or clone it standalone to explore on its own:
 
 ```bash
-git clone https://github.com/Nawfal3D/AICE2005_Workshop_2627.git
+git clone https://github.com/Dr-AlHashimy/AICE2005_Workshop_2627.git
 ```
