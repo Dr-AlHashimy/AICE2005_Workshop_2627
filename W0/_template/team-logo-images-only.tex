@@ -1,0 +1,33 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,landscape,margin=15mm]{geometry}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\definecolor{faint}{HTML}{C7CDD4}
+
+% One logo slot: a plain 58mm-diameter placeholder, no circle outline.
+% Paste the SAME logo into all 6.
+\newcommand{\logoslot}{%
+  \begin{tikzpicture}
+    \node[minimum width=58mm, minimum height=58mm] at (0,0) {\color{faint}\itshape paste logo here};
+    % To place your logo image instead of the placeholder text, replace
+    % the \node line above with, e.g.:
+    %   \node at (0,0) {\includegraphics[width=58mm]{your-logo.png}};
+  \end{tikzpicture}%
+}
+
+\begin{document}
+
+\vspace*{\fill}
+\begin{center}
+\begin{tabular}{@{} c @{\hspace{24mm}} c @{\hspace{24mm}} c @{}}
+\logoslot & \logoslot & \logoslot \\[24mm]
+\logoslot & \logoslot & \logoslot \\
+\end{tabular}
+\end{center}
+\vspace*{\fill}
+
+\end{document}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" font-family="'Lucida Sans Regular','Lucida Sans','Lucida Grande',Geneva,Verdana,sans-serif">
+  <rect width="560" height="560" fill="white"/>
+
+  <!-- Quadrant squares -->
+  <rect x="90" y="40" width="200" height="200" fill="#e67300"/>
+  <rect x="298" y="40" width="200" height="200" fill="#e93147"/>
+  <rect x="90" y="248" width="200" height="200" fill="#22c061"/>
+  <rect x="298" y="248" width="200" height="200" fill="#4b96e7"/>
+
+  <!-- Quadrant labels -->
+  <text x="190" y="130" text-anchor="middle" fill="white" font-size="22" font-weight="bold">Keep</text>
+  <text x="190" y="158" text-anchor="middle" fill="white" font-size="22" font-weight="bold">Satisfied</text>
+
+  <text x="398" y="130" text-anchor="middle" fill="white" font-size="22" font-weight="bold">Manage</text>
+  <text x="398" y="158" text-anchor="middle" fill="white" font-size="22" font-weight="bold">Closely</text>
+
+  <text x="190" y="338" text-anchor="middle" fill="white" font-size="20" font-weight="bold">Monitor /</text>
+  <text x="190" y="366" text-anchor="middle" fill="white" font-size="20" font-weight="bold">Minimal Effort</text>
+
+  <text x="398" y="338" text-anchor="middle" fill="white" font-size="22" font-weight="bold">Keep</text>
+  <text x="398" y="366" text-anchor="middle" fill="white" font-size="22" font-weight="bold">Informed</text>
+
+  <!-- Axes -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1E2761"/>
+    </marker>
+  </defs>
+  <line x1="70" y1="448" x2="70" y2="30" stroke="#1E2761" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="90" y1="468" x2="518" y2="468" stroke="#1E2761" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Axis titles -->
+  <text x="40" y="244" text-anchor="middle" fill="#1E2761" font-size="16" font-weight="bold"
+        transform="rotate(-90, 40, 244)">Power / influence of stakeholder</text>
+  <text x="304" y="500" text-anchor="middle" fill="#1E2761" font-size="16" font-weight="bold">Level of interest of stakeholder</text>
+</svg>
