@@ -42,15 +42,15 @@ Compiled from the artefacts produced across the workshops. Carry each
 template's content into the final document rather than submitting the raw
 templates:
 
-| Section | Source workshop | Template |
-| --- | --- | --- |
-| 1. Personas & Use Case Diagram | W1 | [`W1/_template/persona-template.md`](W1/_template/persona-template.md) |
-| 2. Stakeholder Mapping | W2 | [`W2/_template/stakeholder-mapping-template.md`](W2/_template/stakeholder-mapping-template.md) |
-| 3. Functional Requirements | W2 | [`W2/_template/functional-requirements-template.md`](W2/_template/functional-requirements-template.md) |
-| 4. Non-Functional Requirements | W2 | [`W2/_template/nonfunctional-requirements-template.md`](W2/_template/nonfunctional-requirements-template.md) |
-| 5. UML Design — Class & Sequence Diagrams | W3 | see [`W3/README.md`](W3/README.md) |
-| 6. Prioritisation — MoSCoW / T-shirt Sizing | W4 | see [`W4/README.md`](W4/README.md) |
-| 7. Test Plan | W4 | see [`W4/README.md`](W4/README.md) |
+| Section | Source workshop |
+| --- | --- |
+| 1. Personas & Use Case Diagram | W1 |
+| 2. Stakeholder Mapping | W2 |
+| 3. Functional Requirements | W2 |
+| 4. Non-Functional Requirements | W2 |
+| 5. UML Design — Class & Sequence Diagrams | W3 |
+| 6. Prioritisation — MoSCoW / T-shirt Sizing | W4 |
+| 7. Test Plan | W4 |
 
 A team logo (W0) may be used as a cover page, optional.
 
@@ -80,13 +80,11 @@ Recommended structure:
 
 ## Submission Details
 
-*(confirm against this year's module handbook before publishing to
-students)*
 
-- Due: **[TBC]** (via Moodle).
-- Presentation: **[TBC]** workshop session.
+- Due: 30/11/26 (via Moodle).
+- Presentation: Week 11 and 12 workshop session.
 - Format: Group PDF specification + repository link + live demo.
-- Weight: **[TBC]**% of module grade.
+- Weight: 40% of module grade.
 
 ## Assessment
 
