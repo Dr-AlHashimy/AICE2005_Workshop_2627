@@ -2,10 +2,9 @@
 
 ## Instructions
 
-1. **Evaluate the remaining implementation tasks for your app using a time-management approach** — pick either **MoSCoW** or **T-shirt sizing** (your team's choice, see below), and apply it to the tasks you still need to build.
-2. Bring your prioritised/estimated task list to the next session for discussion.
-
-> The testing plan has moved to [W7](../W7/README.md).
+1. **Create a testing plan** for your app. For each functional requirement from your W2 requirements table, write at least one test case: an ID, a short description, the steps to carry it out, and the expected result.
+2. **Evaluate the remaining implementation tasks for your app using a time-management approach** — pick either **MoSCoW** or **T-shirt sizing** (your team's choice, see below), and apply it to the tasks you still need to build.
+3. Bring your test plan and your prioritised/estimated task list to the next session for discussion.
 
 ## Choosing a time-management approach
 
