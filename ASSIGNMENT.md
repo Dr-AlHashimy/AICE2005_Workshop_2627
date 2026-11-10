@@ -23,7 +23,13 @@ By completing this assignment, you will demonstrate that you can:
 - Express a system's structure and behaviour using UML class and sequence
   diagrams (W3).
 - Prioritise and estimate implementation work using MoSCoW or T-shirt
-  sizing, and plan how requirements will be tested (W4).
+  sizing (W4).
+- Refine your UML into a design-level diagram using standard notation —
+  visibility, types, multiplicity, relationships and packages (W5).
+- Prioritise your requirements specification using MoSCoW, with each
+  priority justified against personas, stakeholders or use cases (W6).
+- Plan how your requirements will be tested, with a test case for each
+  requirement (W7).
 - Use a specification to direct an AI-assisted ("vibe coded")
   implementation, and explain where the implementation does — or doesn't —
   match what was specified.
@@ -45,12 +51,12 @@ templates:
 | Section | Source workshop |
 | --- | --- |
 | 1. Personas & Use Case Diagram | W1 |
-| 2. Stakeholder Mapping | W2 |
-| 3. Functional Requirements | W2 |
-| 4. Non-Functional Requirements | W2 |
-| 5. UML Design — Class & Sequence Diagrams | W3 |
-| 6. Prioritisation — MoSCoW / T-shirt Sizing | W4 |
-| 7. Test Plan | W4 |
+| 2. Stakeholder Mapping & Functional / Non-Functional Requirements | W2 |
+| 3. UML Class & Sequence Diagrams | W3 |
+| 4. Task Prioritisation — MoSCoW / T-shirt Sizing | W4 |
+| 5. UML Design Diagram | W5 |
+| 6. Requirements Prioritisation — MoSCoW | W6 |
+| 7. Test Plan | W7 |
 
 A team logo (W0) may be used as a cover page, optional.
 
@@ -71,8 +77,8 @@ Recommended structure:
 
 - Slide 1: Introduce your app and your team.
 - Slide 2: Personas & the problem you're solving (W1).
-- Slide 3: Requirements & how they shaped your design (W2).
-- Slide 4: System design — class/sequence diagrams (W3).
+- Slide 3: Requirements, their MoSCoW priorities & how they shaped your design (W2, W6).
+- Slide 4: System design — class/sequence and design diagrams (W3, W5).
 - Slide 5: What you built vs. what you specified — and why they diverge,
   if they do.
 - Live demo of the application.
@@ -102,22 +108,22 @@ before publishing):
 
 | Criterion | Weight | Excellent | Good | Satisfactory | Poor |
 | --- | --- | --- | --- | --- | --- |
-| Personas & Use Case Diagram | 10 | Personas detailed and linked to clear, consistent use cases. | Mostly clear; minor gaps in linkage. | Generic personas or weak use case linkage. | Missing or poor quality. |
-| Stakeholder Mapping | 8 | All quadrants populated with justified, specific stakeholders. | Mostly complete; light justification. | Sparse or generic stakeholders. | Missing. |
-| Functional Requirements | 10 | Requirements precise, traceable to personas/use cases. | Mostly clear; some untraceable. | Vague or incomplete. | Missing. |
-| Non-Functional Requirements | 8 | Specific, measurable, relevant to the app. | Mostly reasonable. | Generic or unmeasurable. | Missing. |
-| UML Design (Class & Sequence) | 12 | Diagrams consistent with requirements; relationships and flows clear. | Mostly coherent; minor inconsistencies. | Partial or inconsistent with requirements. | Missing or incorrect. |
-| Prioritisation (MoSCoW / T-shirt) | 6 | Priorities/sizes justified and realistic. | Mostly reasonable; light justification. | Uneven or arbitrary. | Missing. |
-| Test Plan | 6 | All requirements covered by clear, measurable test cases. | Mostly mapped. | Partial coverage. | Missing. |
+| Personas & Use Case Diagram | 10 | **(8–10)** Personas detailed and linked to clear, consistent use cases. | **(6–7)** Mostly clear; minor gaps in linkage. | **(4–5)** Generic personas or weak use case linkage. | **(0–3)** Missing or poor quality. |
+| Stakeholder Mapping | 8 | **(7–8)** All quadrants populated with justified, specific stakeholders. | **(5–6)** Mostly complete; light justification. | **(4)** Sparse or generic stakeholders. | **(0–3)** Missing. |
+| Functional Requirements | 10 | **(8–10)** Requirements precise, traceable to personas/use cases. | **(6–7)** Mostly clear; some untraceable. | **(4–5)** Vague or incomplete. | **(0–3)** Missing. |
+| Non-Functional Requirements | 8 | **(7–8)** Specific, measurable, relevant to the app. | **(5–6)** Mostly reasonable. | **(4)** Generic or unmeasurable. | **(0–3)** Missing. |
+| UML Design (Class, Sequence & Design Diagram) | 12 | **(10–12)** Diagrams consistent with requirements; relationships and flows clear; design diagram uses correct notation (visibility, types, multiplicity, packages). | **(8–9)** Mostly coherent; minor inconsistencies. | **(5–7)** Partial or inconsistent with requirements. | **(0–4)** Missing or incorrect. |
+| Prioritisation (Requirements MoSCoW & Task MoSCoW / T-shirt) | 6 | **(5–6)** Requirement priorities and task priorities/sizes justified, balanced and realistic. | **(4)** Mostly reasonable; light justification. | **(3)** Uneven or arbitrary. | **(0–2)** Missing. |
+| Test Plan | 6 | **(5–6)** All requirements covered by clear, measurable test cases. | **(4)** Mostly mapped. | **(3)** Partial coverage. | **(0–2)** Missing. |
 
 ### Application & Presentation Rubric (40 marks)
 
 | Criterion | Weight | Excellent | Good | Satisfactory | Poor |
 | --- | --- | --- | --- | --- | --- |
-| Specification-to-implementation fidelity | 12 | App clearly implements the specified requirements; any deviations are explained and justified. | Mostly matches spec; minor unexplained gaps. | Partial match; gaps not addressed. | App bears little relation to the spec. |
-| Application quality & functionality | 8 | Application is functional, usable, and demonstrates the core note-taking flows. | Mostly functional; minor issues. | Partially functional. | Non-functional or incomplete. |
-| Group demo | 10 | Confident, well-paced demo that clearly shows the app working end to end. | Mostly clear; minor stumbles. | Demo is unclear or incomplete. | No working demo. |
-| Individual oral Q&A | 10 (per student) | Clearly explains and defends their own contribution and the team's design decisions. | Mostly able to explain decisions, with some prompting. | Limited understanding of decisions beyond their own part. | Unable to explain the design or their contribution. |
+| Specification-to-implementation fidelity | 12 | **(10–12)** App clearly implements the specified requirements; any deviations are explained and justified. | **(8–9)** Mostly matches spec; minor unexplained gaps. | **(5–7)** Partial match; gaps not addressed. | **(0–4)** App bears little relation to the spec. |
+| Application quality & functionality | 8 | **(7–8)** Application is functional, usable, and demonstrates the core note-taking flows. | **(5–6)** Mostly functional; minor issues. | **(4)** Partially functional. | **(0–3)** Non-functional or incomplete. |
+| Group demo | 10 | **(8–10)** Confident, well-paced demo that clearly shows the app working end to end. | **(6–7)** Mostly clear; minor stumbles. | **(4–5)** Demo is unclear or incomplete. | **(0–3)** No working demo. |
+| Individual oral Q&A | 10 (per student) | **(8–10)** Clearly explains and defends their own contribution and the team's design decisions. | **(6–7)** Mostly able to explain decisions, with some prompting. | **(4–5)** Limited understanding of decisions beyond their own part. | **(0–3)** Unable to explain the design or their contribution. |
 
 Individual oral Q&A is scored per student, independently of the group marks
 above — it is how each team member's individual understanding and
