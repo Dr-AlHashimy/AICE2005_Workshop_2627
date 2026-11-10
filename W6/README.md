@@ -2,25 +2,19 @@
 
 ## Instructions
 
-1. **Apply MoSCoW to your requirements specification** — take every functional (FR) and non-functional (NFR) requirement from your W2 tables and assign each one a MoSCoW priority. Use [`_template/moscow-requirements-template.md`](_template/moscow-requirements-template.md).
-2. **Justify each priority** in one line — tie it back to a persona, a stakeholder or a use case (e.g. *"Must — Persona 1 can't capture notes without it"*). A priority with no reason is a guess.
-3. **Check the balance** — if almost everything is a *Must*, you haven't prioritised. Aim for roughly **no more than 60% Must**, and make sure you have at least one **Won't (this time)** so your scope is explicit.
-4. **Update your specification** — your *Must* requirements are your minimum viable app: these are what you'll build first when you start vibe-coding, and what your test plan must cover.
-5. Bring your prioritised requirements table to the next session for discussion.
+1. **Create a testing plan** for your app. Use [`_template/test-plan-template.md`](_template/test-plan-template.md). For each functional requirement from your W2 requirements table, write at least one test case: an ID, the requirement it tests, a short description, the steps to carry it out, and the expected result.
+2. **Cover your non-functional requirements too** — each NFR needs a test you can actually measure (e.g. *"note list loads in under 1 second with 500 notes"*), not just "the app is fast".
+3. **Start with your *Must* requirements** — use your MoSCoW priorities from W5. Every *Must* requirement needs at least one test case; *Should* and *Could* follow if time allows.
+4. **Check coverage** — every requirement ID should appear in at least one test case. List any requirement you can't yet test and why.
+5. Bring your test plan to the next session for discussion.
 
-## MoSCoW for requirements
+## Writing good test cases
 
-| Priority | Meaning for a requirement | Ask yourself |
-| --- | --- | --- |
-| **Must have** | The app fails without it — not usable, not safe, or not legal. | *"If we ship without this, is the app pointless?"* |
-| **Should have** | Important and expected, but there's a workaround if it's missing. | *"Painful to leave out, but the app still works?"* |
-| **Could have** | Desirable; improves the experience but nobody is blocked without it. | *"Nice if time allows?"* |
-| **Won't have (this time)** | Agreed to be out of scope for this release — recorded, not forgotten. | *"Are we deliberately saying not now?"* |
+- **One behaviour per test** — if a test checks two things, split it.
+- **Steps anyone can follow** — someone outside your team should be able to run the test from your steps alone.
+- **Expected result is observable** — describe what the user sees or what is stored, so pass/fail is unambiguous.
+- **Traceable** — the Requirement column links each test back to an FR/NFR, and through it to a use case and persona.
 
-- Guide: https://www.agilebusiness.org/dsdm-project-framework/moscow-prioritisation.html
+## `_template/` — test plan template
 
-> In W5 you used MoSCoW (or T-shirt sizing) on your **implementation tasks**. This week you apply it to the **requirements themselves** — deciding *what* the app must do, before deciding *how much work* it is.
-
-## `_template/` — MoSCoW requirements template
-
-- `_template/moscow-requirements-template.md` — your FR and NFR tables with Priority and Justification columns added.
+- `_template/test-plan-template.md` — the test case table, with a Result column to fill in once you start testing your vibe-coded app.

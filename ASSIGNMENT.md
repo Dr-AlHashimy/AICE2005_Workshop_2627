@@ -18,18 +18,17 @@ questioning**.
 By completing this assignment, you will demonstrate that you can:
 
 - Identify personas and connect user needs to application behaviour (W1).
-- Map stakeholders by power and interest, and translate that into
-  functional and non-functional requirements (W2).
-- Express a system's structure and behaviour using UML class and sequence
-  diagrams (W3).
-- Refine your UML into a design-level diagram using standard notation —
-  visibility, types, multiplicity, relationships and packages (W4).
-- Prioritise and estimate implementation work using MoSCoW or T-shirt
-  sizing (W5).
-- Prioritise your requirements specification using MoSCoW, with each
-  priority justified against personas, stakeholders or use cases (W6).
+- Specify functional and non-functional requirements traceable to personas
+  and use cases (W2).
+- Map stakeholders by power and interest, and show how they influence the
+  system (W3).
+- Design the system's structure and behaviour using UML class and sequence
+  diagrams in standard notation — visibility, types, multiplicity,
+  relationships and packages (W4).
+- Prioritise your requirements using MoSCoW, with each priority justified
+  against personas, stakeholders or use cases (W5).
 - Plan how your requirements will be tested, with a test case for each
-  requirement (W7).
+  requirement (W6).
 - Use a specification to direct an AI-assisted ("vibe coded")
   implementation, and explain where the implementation does — or doesn't —
   match what was specified.
@@ -51,12 +50,11 @@ templates:
 | Section | Source workshop |
 | --- | --- |
 | 1. Personas & Use Case Diagram | W1 |
-| 2. Stakeholder Mapping & Functional / Non-Functional Requirements | W2 |
-| 3. UML Class & Sequence Diagrams | W3 |
-| 4. UML Design Diagram | W4 |
-| 5. Task Prioritisation — MoSCoW / T-shirt Sizing | W5 |
-| 6. Requirements Prioritisation — MoSCoW | W6 |
-| 7. Test Plan | W7 |
+| 2. Functional & Non-Functional Requirements | W2 |
+| 3. Stakeholder Mapping | W3 |
+| 4. UML Design — Class & Sequence Diagrams | W4 |
+| 5. Prioritisation — MoSCoW | W5 |
+| 6. Test Plan | W6 |
 
 A team logo (W0) may be used as a cover page, optional.
 
@@ -77,8 +75,8 @@ Recommended structure:
 
 - Slide 1: Introduce your app and your team.
 - Slide 2: Personas & the problem you're solving (W1).
-- Slide 3: Requirements, their MoSCoW priorities & how they shaped your design (W2, W6).
-- Slide 4: System design — class/sequence and design diagrams (W3, W4).
+- Slide 3: Requirements, stakeholders, MoSCoW priorities & how they shaped your design (W2, W3, W5).
+- Slide 4: System design — UML class & sequence diagrams (W4).
 - Slide 5: What you built vs. what you specified — and why they diverge,
   if they do.
 - Live demo of the application.
@@ -109,11 +107,11 @@ before publishing):
 | Criterion | Weight | Excellent | Good | Satisfactory | Poor |
 | --- | --- | --- | --- | --- | --- |
 | Personas & Use Case Diagram | 10 | **(8–10)** Personas detailed and linked to clear, consistent use cases. | **(6–7)** Mostly clear; minor gaps in linkage. | **(4–5)** Generic personas or weak use case linkage. | **(0–3)** Missing or poor quality. |
-| Stakeholder Mapping | 8 | **(7–8)** All quadrants populated with justified, specific stakeholders. | **(5–6)** Mostly complete; light justification. | **(4)** Sparse or generic stakeholders. | **(0–3)** Missing. |
 | Functional Requirements | 10 | **(8–10)** Requirements precise, traceable to personas/use cases. | **(6–7)** Mostly clear; some untraceable. | **(4–5)** Vague or incomplete. | **(0–3)** Missing. |
 | Non-Functional Requirements | 8 | **(7–8)** Specific, measurable, relevant to the app. | **(5–6)** Mostly reasonable. | **(4)** Generic or unmeasurable. | **(0–3)** Missing. |
-| UML Design (Class, Sequence & Design Diagram) | 12 | **(10–12)** Diagrams consistent with requirements; relationships and flows clear; design diagram uses correct notation (visibility, types, multiplicity, packages). | **(8–9)** Mostly coherent; minor inconsistencies. | **(5–7)** Partial or inconsistent with requirements. | **(0–4)** Missing or incorrect. |
-| Prioritisation (Requirements MoSCoW & Task MoSCoW / T-shirt) | 6 | **(5–6)** Requirement priorities and task priorities/sizes justified, balanced and realistic. | **(4)** Mostly reasonable; light justification. | **(3)** Uneven or arbitrary. | **(0–2)** Missing. |
+| Stakeholder Mapping | 8 | **(7–8)** All quadrants populated with justified, specific stakeholders. | **(5–6)** Mostly complete; light justification. | **(4)** Sparse or generic stakeholders. | **(0–3)** Missing. |
+| UML Design (Class & Sequence) | 12 | **(10–12)** Diagrams consistent with requirements; relationships and flows clear; correct notation (visibility, types, multiplicity, packages). | **(8–9)** Mostly coherent; minor inconsistencies. | **(5–7)** Partial or inconsistent with requirements. | **(0–4)** Missing or incorrect. |
+| Prioritisation (MoSCoW) | 6 | **(5–6)** Priorities justified, balanced and realistic. | **(4)** Mostly reasonable; light justification. | **(3)** Uneven or arbitrary. | **(0–2)** Missing. |
 | Test Plan | 6 | **(5–6)** All requirements covered by clear, measurable test cases. | **(4)** Mostly mapped. | **(3)** Partial coverage. | **(0–2)** Missing. |
 
 ### Application & Presentation Rubric (40 marks)
