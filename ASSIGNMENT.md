@@ -22,10 +22,10 @@ By completing this assignment, you will demonstrate that you can:
   functional and non-functional requirements (W2).
 - Express a system's structure and behaviour using UML class and sequence
   diagrams (W3).
-- Prioritise and estimate implementation work using MoSCoW or T-shirt
-  sizing (W4).
 - Refine your UML into a design-level diagram using standard notation —
-  visibility, types, multiplicity, relationships and packages (W5).
+  visibility, types, multiplicity, relationships and packages (W4).
+- Prioritise and estimate implementation work using MoSCoW or T-shirt
+  sizing (W5).
 - Prioritise your requirements specification using MoSCoW, with each
   priority justified against personas, stakeholders or use cases (W6).
 - Plan how your requirements will be tested, with a test case for each
@@ -53,8 +53,8 @@ templates:
 | 1. Personas & Use Case Diagram | W1 |
 | 2. Stakeholder Mapping & Functional / Non-Functional Requirements | W2 |
 | 3. UML Class & Sequence Diagrams | W3 |
-| 4. Task Prioritisation — MoSCoW / T-shirt Sizing | W4 |
-| 5. UML Design Diagram | W5 |
+| 4. UML Design Diagram | W4 |
+| 5. Task Prioritisation — MoSCoW / T-shirt Sizing | W5 |
 | 6. Requirements Prioritisation — MoSCoW | W6 |
 | 7. Test Plan | W7 |
 
@@ -78,7 +78,7 @@ Recommended structure:
 - Slide 1: Introduce your app and your team.
 - Slide 2: Personas & the problem you're solving (W1).
 - Slide 3: Requirements, their MoSCoW priorities & how they shaped your design (W2, W6).
-- Slide 4: System design — class/sequence and design diagrams (W3, W5).
+- Slide 4: System design — class/sequence and design diagrams (W3, W4).
 - Slide 5: What you built vs. what you specified — and why they diverge,
   if they do.
 - Live demo of the application.
